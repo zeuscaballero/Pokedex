@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemon Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PokemonSearchViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="720x1280_pokedex_phone_wallpaper_by_rhlpixels-d9wlus2" translatesAutoresizingMaskIntoConstraints="NO" id="dn9-Ns-RrK">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyA-Fa-hEf">
+                                <rect key="frame" x="20" y="493" width="374" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="R7S-tj-lf1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar alpha="0.80000000000000004" contentMode="redraw" placeholder="Enter Pokemon " translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oW-4h-BAS">
+                                <rect key="frame" x="32" y="649" width="349" height="44"/>
+                                <color key="backgroundColor" red="0.2016656101" green="0.99642950299999999" blue="0.9998632073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.20166561007499695" green="0.99642950296401978" blue="0.99986320734024048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PEi-gO-idi"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crp-5c-AtY">
+                                <rect key="frame" x="193" y="358" width="130" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AcI-Yu-sgp">
+                                <rect key="frame" x="20" y="320" width="157" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="XYF-nL-SWF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3x-xe-A85">
+                                <rect key="frame" x="200" y="434" width="116" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="Gvi-Jw-zKs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.76404207101234034" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AcI-Yu-sgp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="300" id="Dw1-J8-2Bc"/>
+                            <constraint firstItem="Y3x-xe-A85" firstAttribute="leading" secondItem="AcI-Yu-sgp" secondAttribute="trailing" constant="23" id="EGu-ku-EWq"/>
+                            <constraint firstItem="dn9-Ns-RrK" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Gak-l8-Ff9"/>
+                            <constraint firstItem="RyA-Fa-hEf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H5E-Mt-NNE"/>
+                            <constraint firstItem="Y3x-xe-A85" firstAttribute="top" secondItem="crp-5c-AtY" secondAttribute="bottom" constant="50" id="JhX-KR-nkQ"/>
+                            <constraint firstItem="AcI-Yu-sgp" firstAttribute="leading" secondItem="2oW-4h-BAS" secondAttribute="leading" constant="-12" id="Pif-sW-sef"/>
+                            <constraint firstAttribute="trailing" secondItem="dn9-Ns-RrK" secondAttribute="trailing" id="Pnl-if-PHf"/>
+                            <constraint firstItem="Y3x-xe-A85" firstAttribute="leading" secondItem="AcI-Yu-sgp" secondAttribute="trailing" constant="23" id="SXA-y7-aVd"/>
+                            <constraint firstItem="2oW-4h-BAS" firstAttribute="top" secondItem="RyA-Fa-hEf" secondAttribute="bottom" constant="80" id="Xck-iz-6k5"/>
+                            <constraint firstItem="2oW-4h-BAS" firstAttribute="leading" secondItem="dn9-Ns-RrK" secondAttribute="leading" constant="32" id="ZYA-Gi-Hso"/>
+                            <constraint firstItem="crp-5c-AtY" firstAttribute="leading" secondItem="AcI-Yu-sgp" secondAttribute="trailing" constant="16" id="c1N-dF-TBi"/>
+                            <constraint firstAttribute="bottom" secondItem="RyA-Fa-hEf" secondAttribute="bottom" constant="167" id="cbd-93-BAa"/>
+                            <constraint firstItem="RyA-Fa-hEf" firstAttribute="top" secondItem="Y3x-xe-A85" secondAttribute="bottom" constant="31" id="e6O-Kx-0D9"/>
+                            <constraint firstItem="Y3x-xe-A85" firstAttribute="centerX" secondItem="crp-5c-AtY" secondAttribute="centerX" id="i7V-Wh-hgj"/>
+                            <constraint firstItem="2oW-4h-BAS" firstAttribute="trailing" secondItem="dn9-Ns-RrK" secondAttribute="trailing" constant="-33" id="kAV-K7-JVC"/>
+                            <constraint firstItem="dn9-Ns-RrK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="kKe-cx-Jjs"/>
+                            <constraint firstItem="dn9-Ns-RrK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tQo-PD-yTk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y3x-xe-A85" secondAttribute="trailing" constant="78" id="wWl-Eb-ANn"/>
+                            <constraint firstItem="dn9-Ns-RrK" firstAttribute="centerX" secondItem="RyA-Fa-hEf" secondAttribute="centerX" id="wdz-yc-Qqe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abilitiesLabel" destination="RyA-Fa-hEf" id="RHE-7Z-5wa"/>
+                        <outlet property="nameLabel" destination="crp-5c-AtY" id="Ib8-8n-nqz"/>
+                        <outlet property="pokemonIDLabel" destination="Y3x-xe-A85" id="RHu-0y-f3E"/>
+                        <outlet property="pokemonImageView" destination="AcI-Yu-sgp" id="p3u-Wq-v19"/>
+                        <outlet property="pokemonSearchBar" destination="2oW-4h-BAS" id="f31-b8-3XJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="81.521739130434796"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="720x1280_pokedex_phone_wallpaper_by_rhlpixels-d9wlus2" width="670" height="1191"/>
+    </resources>
+</document>
